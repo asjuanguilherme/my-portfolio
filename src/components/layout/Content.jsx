@@ -9,22 +9,15 @@ import About from '../../views/About/About'
 import Portfolio from '../../views/Portfolio/Portfolio'
 import Contact from '../../views/Contact/Contact'
 
+
 const Content = props => {
     return (
         <main className="content">
             <Switch>
-                <Route path="/sobre">
-                    <About/>
-                </Route>
-                <Route path="/portfolio">
-                    <Portfolio/>
-                </Route>
-                <Route path="/contato">
-                    <Contact/>
-                </Route>
-                <Route path="/">
-                    <Home/>
-                </Route>
+                <Route path="/sobre" component={ About } />
+                <Route path="/portfolio" component={ Portfolio } />
+                <Route path="/contato" component={ Contact } />
+                <Route path="/" component={ Home } />
             </Switch>
         </main>
     )

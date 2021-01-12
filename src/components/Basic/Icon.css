@@ -1,5 +1,7 @@
 .icon-template {
     display: flex;
+    transition: 400ms;
+    cursor: default;
 }
 
 .icon-template > a {

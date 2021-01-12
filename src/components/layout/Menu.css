@@ -31,18 +31,19 @@
 
     text-decoration: none;
     border-radius: 8px;
-    transition: 150ms;
+    transition: 300ms;
     color: #686868;
 }
 
 .menu__nav > ul > li > a:hover {
-    background-color: rgba(112, 112, 255,.10);
-    color: #7070FF;
+    background-color: rgba(112, 112, 255,.06);
+    /* color: #7070FF; */
 }
 
-.menu__nav > ul > li > a[selected] {
-    background-color: rgba(112, 112, 255,.2);
+.menu__nav > ul > li > a.menu__nav--selected {
+    background-color: rgba(112, 112, 255,.15);
     color: #7070FF;
+    transition: 150ms;
 }
 
 .menu__nav > ul > li > a > i{

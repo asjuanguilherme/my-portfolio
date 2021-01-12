@@ -1,7 +1,7 @@
 import './Menu.css'
 import React from 'react'
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import AuthorInf from './Menu/Author'
 
@@ -12,16 +12,16 @@ const Menu = props => {
             <nav className="menu__nav" >
                 <ul>
                     <li>
-                        <Link to="/"><i class="fa fa-home"/>Página Inicial</Link>
+                        <NavLink exact to="/" activeClassName="menu__nav--selected" ><i className="fa fa-home"/>Página Inicial</NavLink>
                     </li>
                     <li>
-                        <Link to="/sobre"><i class="fa fa-user"/>Sobre Mim</Link>
+                        <NavLink to="/sobre" activeClassName="menu__nav--selected" ><i className="fa fa-user"/>Sobre Mim</NavLink>
                     </li>
                     <li>
-                        <Link to="/portfolio"><i class="fa fa-desktop"/>Portfólio</Link>
+                        <NavLink to="/portfolio" activeClassName="menu__nav--selected" ><i className="fa fa-desktop"/>Portfólio</NavLink>
                     </li>
                     <li>
-                        <Link to="/contato"><i class="fa fa-envelope"/>Contato</Link>
+                        <NavLink to="/contato" activeClassName="menu__nav--selected" ><i className="fa fa-envelope"/>Contato</NavLink>
                     </li>
                 </ul>
             </nav>
