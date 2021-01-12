@@ -1,0 +1,22 @@
+.icon-template {
+    display: flex;
+    transition: 400ms;
+    cursor: default;
+}
+
+.icon-template > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+.icon-template > a > i {
+    color: inherit;
+    font-size: inherit;
+}
+
+.icon-template__label {
+    margin-left: 8px;
+}

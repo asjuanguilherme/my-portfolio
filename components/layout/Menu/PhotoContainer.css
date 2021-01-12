@@ -1,0 +1,26 @@
+.photo_container {
+    width: 100px;
+    height: 100px;
+    background-color: #6556DF;
+    border-radius: 50%;
+
+    position: relative;
+
+    overflow: hidden;
+    transition: 150ms;
+}
+
+.photo_container > img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    transition: 1000ms
+}
+
+.photo_container > img:hover {
+    width: 110%;
+}
+
