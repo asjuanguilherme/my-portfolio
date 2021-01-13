@@ -7,7 +7,7 @@
     position: relative;
 
     overflow: hidden;
-    transition: 150ms;
+    transition: 250ms;
 }
 
 .photo_container > img {
@@ -20,7 +20,7 @@
     transition: 1000ms
 }
 
-.photo_container > img:hover {
-    width: 110%;
+.photo_container--mini {
+    width: 60px;
+    height: 60px;
 }
-

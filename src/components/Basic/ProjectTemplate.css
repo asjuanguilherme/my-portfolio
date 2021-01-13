@@ -4,6 +4,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
+
+    transition: 300ms;
 }
 
 .project-template > div > img {

@@ -11,13 +11,25 @@ import Contact from '../../views/Contact/Contact'
 
 
 const Content = props => {
+
+    const sidebarMini = props.sidebarMini
+    const noturneTheme = props.noturneTheme
+
     return (
-        <main className="content">
+        <main className={ `content ${ sidebarMini? 'content--mini' : '' } ${ noturneTheme? 'content--noturne' : '' }` } >
             <Switch>
-                <Route path="/sobre" component={ About } />
-                <Route path="/portfolio" component={ Portfolio } />
-                <Route path="/contato" component={ Contact } />
-                <Route path="/" component={ Home } />
+                <Route path="/contato">
+                    <Contact></Contact>
+                </Route>
+                <Route path="/portfolio">
+                    <Portfolio></Portfolio>
+                </Route>
+                <Route path="/sobre">
+                    <About noturneTheme={ noturneTheme } ></About>
+                </Route>
+                <Route path="/">
+                    <Home></Home>
+                </Route>
             </Switch>
         </main>
     )

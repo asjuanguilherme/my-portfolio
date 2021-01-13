@@ -1,0 +1,35 @@
+.showcase-controller {
+    display: flex;
+    width: max-content;
+    padding: 3px;
+
+    border-radius: 8px;
+    border: 1px solid #aaa;
+
+    margin: 20px 0;
+}
+
+.showcase-controller__option {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 5px;    
+    margin: 3px;
+
+    cursor: pointer;
+    color: #aaa;
+    border-radius: 8px;
+    
+    transition: 250ms;
+}
+
+.showcase-controller__option:hover {
+    background-color: rgba(112, 112, 255,.06);
+}
+
+.showcase-controller__option--active {
+    color: #7070FF;
+}

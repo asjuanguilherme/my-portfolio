@@ -5,7 +5,7 @@
     border-radius: 8px;
     border: none;
     color: white;
-    background-color: #6556DF;
+    background-color: #7070FF;
     
     font-size: 16px;
 
@@ -14,7 +14,7 @@
 }
 
 .button:hover {
-    background-color: #897aff;
+    background-color: #8a8aff;
 }
 
 .button > i {

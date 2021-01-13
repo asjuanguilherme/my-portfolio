@@ -1,0 +1,33 @@
+.sidebar__theme-controller {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 36px;
+    width: 36px;
+    border-radius: 10px;
+
+    font-size: 20px;
+    color: rgb(255, 169, 41);
+
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.sidebar__theme-controller:hover {
+    color: #7070FF;
+    background-color: rgba(112, 112, 255,.06);
+}
+
+.sidebar__theme-controller--active {
+    color: #7070FF;
+}
+
+.sidebar__theme-controller--active:hover {
+    color: rgb(255, 169, 41);
+}

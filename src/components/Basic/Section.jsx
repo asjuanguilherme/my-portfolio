@@ -6,8 +6,10 @@ const Section = props => {
     const Title = props.title
     const Subtitle = props.subtitle ? props.subtitle : false
 
+    const noturneTheme = props.noturneTheme
+
     return(
-        <section className="section">
+        <section className={`section ${ noturneTheme? 'section--noturne' : '' }`}>
             <div className="section__title">
                 <h2>{Title}</h2>
                 {

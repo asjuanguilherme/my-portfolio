@@ -7,7 +7,9 @@ const Icon = props => {
     const label = props.label
     const link = props.link
 
-    const initialColor = props.color? props.color : '#686868'
+    const noturneTheme = props.noturneTheme
+
+    const initialColor = props.color? props.color : `${ noturneTheme? '#fff' : '#686868'}`
     const animatedColor = props.animatedColor? props.animatedColor : '#6556DF'
     
     const [color, setColor] = useState(initialColor)

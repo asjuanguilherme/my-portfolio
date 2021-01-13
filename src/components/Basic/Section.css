@@ -16,3 +16,10 @@
     font-size: 22px;
     line-height: 36px;
 }
+
+.content--noturne .section__title > h2,
+.content--noturne .section__title > h3,
+.content--noturne .section__content
+{
+    color: white;
+}

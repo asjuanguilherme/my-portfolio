@@ -3,7 +3,7 @@ import './Contact.css'
 
 import Section from '../../components/Basic/Section'
 import Icon from '../../components/Basic/Icon'
-import Input from './Input'
+import Input from '../../components/Basic/Input'
 import Button from '../../components/Basic/Button'
 
 const Contact = () => {

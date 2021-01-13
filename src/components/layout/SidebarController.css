@@ -1,0 +1,25 @@
+.sidebar__width-controller {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 36px;
+    width: 36px;
+    border-radius: 10px;
+
+    font-size: 30px;
+    color: #696969;
+
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.sidebar__width-controller:hover {
+    color: #7070FF;
+    background-color: rgba(112, 112, 255,.06);
+}

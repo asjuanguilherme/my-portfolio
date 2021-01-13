@@ -1,9 +1,15 @@
 .menu {
-    width: 100%;
-    max-width: 360px;
+    width: 360px;
     background-color: white;
     border-radius: 0 18px 18px 0;
     box-shadow: 5px 0 26px rgba(0,0,0,.1);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+
+    transition: 250ms;
 }
 
 .menu__nav {
@@ -31,7 +37,7 @@
 
     text-decoration: none;
     border-radius: 8px;
-    transition: 300ms;
+    transition: 250ms;
     color: #686868;
 }
 
@@ -43,10 +49,31 @@
 .menu__nav > ul > li > a.menu__nav--selected {
     background-color: rgba(112, 112, 255,.15);
     color: #7070FF;
-    transition: 150ms;
+    transition: 250ms;
 }
 
 .menu__nav > ul > li > a > i{
     margin-right: 8px;
 }
 
+
+/*****************/
+/*** MENU MINI ***/
+/*****************/
+
+.menu--mini {
+    width: 100px;
+}
+
+.menu--noturne {
+    background-color: #18162e;
+}
+
+.menu--noturne .menu__nav > ul > li > a {
+    color: #d5d5ff;
+}
+
+.menu--noturne .menu__nav > ul > li > a.menu__nav--selected {
+    background-color: rgba(154, 154, 255, 0.15);
+    color: #ffffff;
+}

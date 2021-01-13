@@ -4,13 +4,17 @@ import './Author.css'
 import PhotoContainer from './PhotoContainer'
 import MyPhoto from './author-photo.jpg'
 
-const Author = () => {
+const Author = props => {
+
+    const sidebarMini = props.sidebarMini
+    const noturneTheme = props.noturneTheme
+
     return(
         <div className="author">
-           <PhotoContainer photo={MyPhoto} />
-           <div className="author-info">
-                <div className="author-info__name">Juan Guilherme</div>
-                <div className="author-info__description">Desenvolvedor Front-End</div>
+           <PhotoContainer sidebarMini={ sidebarMini } photo={MyPhoto} />
+           <div className={`author-info ${ noturneTheme? 'author-info--noturne' : '' }`}>
+                <div className="author-info__name">{ sidebarMini? 'JG' : 'Juan Guilherme'}</div>
+                <div className="author-info__description">{ sidebarMini? '' : 'Desenvolvedor Front-End'}</div>
            </div>
         </div>
     )
