@@ -31,3 +31,16 @@
 .sidebar__theme-controller--active:hover {
     color: rgb(255, 169, 41);
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar__theme-controller {
+        top: 20px;
+        left: unset;
+        right: 20px;
+        
+        height: 45px;
+        width: 45px;
+        font-size: 28px;
+    }
+    
+}

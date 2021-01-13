@@ -27,16 +27,16 @@ const Menu = props => {
             <nav className={`menu__nav ${ noturneTheme? 'menu__nav--noturne' : '' }`} >
                 <ul>
                     <li>
-                        <NavLink exact to="/" activeClassName="menu__nav--selected" ><i className="fa fa-home"/>{ sidebarMini? '' : 'Página Inicial' }</NavLink>
+                        <NavLink exact to="/" activeClassName="menu__nav--selected" ><i className="fa fa-home"/><span>{ sidebarMini? '' : 'Página Inicial' }</span></NavLink>
                     </li>
                     <li>
-                        <NavLink to="/sobre" activeClassName="menu__nav--selected" ><i className="fa fa-user"/>{ sidebarMini? '' : 'Sobre Mim' }</NavLink>
+                        <NavLink to="/sobre" activeClassName="menu__nav--selected" ><i className="fa fa-user"/><span>{ sidebarMini? '' : 'Sobre Mim' }</span></NavLink>
                     </li>
                     <li>
-                        <NavLink to="/portfolio" activeClassName="menu__nav--selected" ><i className="fa fa-desktop"/>{ sidebarMini? '' : 'Portfólio' }</NavLink>
+                        <NavLink to="/portfolio" activeClassName="menu__nav--selected" ><i className="fa fa-desktop"/><span>{ sidebarMini? '' : 'Portfólio' }</span></NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contato" activeClassName="menu__nav--selected" ><i className="fa fa-envelope"/>{ sidebarMini? '' : 'Contato' }</NavLink>
+                        <NavLink to="/contato" activeClassName="menu__nav--selected" ><i className="fa fa-envelope"/><span>{ sidebarMini? '' : 'Contato' }</span></NavLink>
                     </li>
                 </ul>
             </nav>

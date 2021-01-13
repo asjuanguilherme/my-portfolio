@@ -38,3 +38,22 @@
 .author-info--noturne .author-info__description, .author-info--noturne .author-info__name {
     color: white;
 }
+
+@media screen and ( max-width: 768px ) {
+    .author {
+        align-self: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: initial;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .author-info {
+        width: max-content;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 15px;
+    }
+}

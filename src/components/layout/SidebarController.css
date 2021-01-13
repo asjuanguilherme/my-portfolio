@@ -23,3 +23,9 @@
     color: #7070FF;
     background-color: rgba(112, 112, 255,.06);
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar__width-controller {
+        display: none;
+    }
+}
