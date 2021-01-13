@@ -33,3 +33,21 @@
 .showcase-controller__option--active {
     color: #7070FF;
 }
+
+.content--noturne .showcase-controller {
+    border: none;
+    background-color: rgba(112, 112, 255,.2);
+}
+
+@media screen and (max-width: 768px) {
+    .showcase-controller {
+        display: none;
+
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 50px;
+
+        align-self: flex-end;
+        margin-left: auto;
+    }
+}

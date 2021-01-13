@@ -8,16 +8,21 @@ import Menu from '../components/layout/Menu'
 
 const App = () => {
 
-  const [sidebarMini, setSidebarMini] = useState(false)
+  localStorage.setItem('sidebarMini', localStorage.sidebarMini === undefined? false : localStorage.sidebarMini )
+  localStorage.setItem('noturneTheme', localStorage.noturneTheme === undefined? false : localStorage.noturneTheme )
+  
+  const [sidebarMini, setSidebarMini] = useState( JSON.parse(localStorage.sidebarMini) )
 
   const sidebarWidthController = () => {
-      sidebarMini? setSidebarMini(false) : setSidebarMini(true)
+    localStorage.setItem('sidebarMini', sidebarMini? false : true )
+    setSidebarMini( JSON.parse(localStorage.sidebarMini) )
   }
 
-  const [noturneTheme, setNoturneTheme] = useState(false)
+  const [noturneTheme, setNoturneTheme] = useState( JSON.parse(localStorage.noturneTheme))
 
   const changeTheme = () => {
-    setNoturneTheme( noturneTheme? false : true )
+    localStorage.setItem('noturneTheme', noturneTheme? false : true )
+    setNoturneTheme( JSON.parse(localStorage.noturneTheme) )
   }
 
   return(

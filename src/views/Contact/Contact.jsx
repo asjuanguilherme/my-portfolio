@@ -30,7 +30,7 @@ const Contact = () => {
           <Input type="text" placeholder="Seu nome ex: Steve Jobs" />
           <Input type="text" placeholder="Seu email ex: stevejobs@apple.com" />
           <Input type="textarea" placeholder="Escreva sua mensagem aqui..." />
-          <Button label="Enviar Mensagem" icon="fa fa-paper-plane" />
+          <Button label="Enviar Mensagem"/>
         </form>
       </Section>
       </>

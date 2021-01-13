@@ -50,6 +50,15 @@
         margin: 0;
     }
     
+    .author-info__name {
+        font-size: 22px;
+    }
+    
+    .author-info__description {
+        font-size: 16px;
+    }
+    
+
     .author-info {
         width: max-content;
         text-align: left;

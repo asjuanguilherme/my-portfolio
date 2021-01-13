@@ -5,11 +5,12 @@ const ShowcaseController = props => {
 
     const sendValue = props.valueController
 
-    const [columns, setColumns] = useState("1fr 1fr 1fr")
+    const [columns, setColumns] = useState( localStorage.showcaseColumns )
 
     const setActive = (value) => {
         setColumns(value)
         sendValue(value)
+        localStorage.setItem('showcaseColumns', value)
     }
 
     const optionActiveClass = "showcase-controller__option--active"

@@ -12,5 +12,9 @@
     .about__stacks {
         display: block;
     }
+
+    .about__stacks > span {
+        margin-bottom: 20px;
+    }
     
 }

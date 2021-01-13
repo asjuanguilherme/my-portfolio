@@ -24,6 +24,14 @@
     background-color: rgba(112, 112, 255,.06);
 }
 
+.menu--noturne .sidebar__width-controller {
+    color: #7070FF;
+}
+
+.menu--noturne .sidebar__width-controller:hover {
+    color: #ffa929;
+}
+
 @media screen and (max-width: 768px) {
     .sidebar__width-controller {
         display: none;

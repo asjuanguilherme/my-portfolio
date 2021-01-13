@@ -1,6 +1,10 @@
+.section {
+    margin-bottom: 60px;
+}
+
 .section__title > h2 {
     color: #6556DF;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 38px;
 }
 
@@ -12,14 +16,29 @@
 
 .section__content {
     margin-top: 30px;
-    margin-bottom: 60px;
     font-size: 22px;
     line-height: 36px;
 }
 
 .content--noturne .section__title > h2,
-.content--noturne .section__title > h3,
-.content--noturne .section__content
+.content--noturne .section__title > h3
 {
+    color:  #7070FF;
+}
+
+.content--noturne .section__content {
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+    
+    .section__content {
+        margin-top: 30px;
+        font-size: 22px;
+        line-height: 36px;
+    }
 }

@@ -5,7 +5,10 @@ import ShowcaseController from './ShowcaseController'
 
 const Showcase = props => {
 
-    const [columns, setColumns] = useState("1fr 1fr 1fr")
+    localStorage.setItem('showcaseColumns', localStorage.showcaseColumns === undefined? "1fr 1fr" : localStorage.showcaseColumns )
+
+
+    const [columns, setColumns] = useState( localStorage.showcaseColumns )
 
     const valueController = (value) => {
         setColumns(value)

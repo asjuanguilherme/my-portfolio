@@ -96,3 +96,23 @@
     background-color: #5252e2;
     padding: 5px 26px;
 }
+
+.content--noturne .project-template > div {
+    background-color: #31315a;
+}
+
+@media screen and ( max-width: 768px ) {
+    .project-template__informations > .name {
+        font-size: 22px;
+    }
+
+    .project-template__informations > .description {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .project-template__informations > a {    
+        font-size: 18px;
+    }
+}

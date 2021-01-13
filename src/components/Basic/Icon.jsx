@@ -7,12 +7,10 @@ const Icon = props => {
     const label = props.label
     const link = props.link
 
-    const noturneTheme = props.noturneTheme
-
-    const initialColor = props.color? props.color : `${ noturneTheme? '#fff' : '#686868'}`
+    const color = props.color
     const animatedColor = props.animatedColor? props.animatedColor : '#6556DF'
     
-    const [color, setColor] = useState(initialColor)
+    const [currentColor, setColor] = useState()
 
     const iconTemplateStyle = {
         color: color,
@@ -20,22 +18,22 @@ const Icon = props => {
         fontSize: props.size,
         marginRight: props.marginX
     }
-
+    
     const changeColor = () => {
         if( props.animatedColor || props.animatedEffect ) {
-            setColor(animatedColor)       
+            setColor( animatedColor )
         }
     }
 
     const returnColor = () => {
         if( props.animatedColor || props.animatedEffect ) {
-            setColor(initialColor)       
+            setColor( 'inherit' )       
         }
     }
 
     return (
         <span className="icon-template" onMouseOver={ changeColor } onMouseLeave={ returnColor } style={ iconTemplateStyle }>
-            <a href={ link } target="_blank" >
+            <a href={ link } target="_blank" style={{ color: currentColor }} >
                 <i className={ icon }></i>
                 <span className="icon-template__label">
                     { label }

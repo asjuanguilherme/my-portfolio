@@ -67,7 +67,7 @@
 }
 
 .menu--noturne {
-    background-color: #18162e;
+    background-color: #03001D;
 }
 
 .menu--noturne .menu__nav > ul > li > a {
@@ -76,7 +76,7 @@
 
 .menu--noturne .menu__nav > ul > li > a.menu__nav--selected {
     background-color: rgba(154, 154, 255, 0.15);
-    color: #ffffff;
+    color:  #7070FF;
 }
 
 /*************/
@@ -104,13 +104,14 @@
 
         background-color: white;
         box-shadow: 5px 0 26px rgba(0,0,0,.1);
+        border-radius: 13px 13px 0 0;
 
         width: 100%;
         height: 60px;
     }
 
     .menu--noturne .menu__nav {
-        background-color: #18162e;
+        background-color: #03001D;
     }
 
     .menu__nav > ul {
@@ -148,9 +149,7 @@
     }
 
     .menu__nav > ul > li > a.menu__nav--selected {
-        background-color: rgba(112, 112, 255,.15);
-        color: #7070FF;
-        transition: 250ms;
+        background-color: unset !important;
     }
 
     .menu__nav > ul > li > a > i{
