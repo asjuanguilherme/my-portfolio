@@ -62,19 +62,19 @@
 /*** MENU MINI ***/
 /*****************/
 
-.menu--mini {
+.app--sidebar-mini .menu {
     width: 100px;
 }
 
-.menu--noturne {
+.app--noturne .menu {
     background-color: #03001D;
 }
 
-.menu--noturne .menu__nav > ul > li > a {
+.app--noturne .menu .menu__nav > ul > li > a {
     color: #d5d5ff;
 }
 
-.menu--noturne .menu__nav > ul > li > a.menu__nav--selected {
+.app--noturne .menu .menu__nav > ul > li > a.menu__nav--selected {
     background-color: rgba(154, 154, 255, 0.15);
     color:  #7070FF;
 }
@@ -110,7 +110,7 @@
         height: 60px;
     }
 
-    .menu--noturne .menu__nav {
+    .app--noturne .menu .menu__nav {
         background-color: #03001D;
     }
 

@@ -24,11 +24,11 @@
     background-color: rgba(112, 112, 255,.06);
 }
 
-.menu--noturne .sidebar__width-controller {
+.app--noturne .menu .sidebar__width-controller {
     color: #7070FF;
 }
 
-.menu--noturne .sidebar__width-controller:hover {
+.app--noturne .menu .sidebar__width-controller:hover {
     color: #ffa929;
 }
 

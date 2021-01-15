@@ -6,7 +6,7 @@
     transition: 250ms;
 }
 
-.content--mini {
+.app--sidebar-mini .content {
     margin-left: 100px;
 }
 

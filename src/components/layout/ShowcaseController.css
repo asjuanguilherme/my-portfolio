@@ -34,7 +34,7 @@
     color: #7070FF;
 }
 
-.content--noturne .showcase-controller {
+.app--noturne .content .showcase-controller {
     border: none;
     background-color: rgba(112, 112, 255,.2);
 }

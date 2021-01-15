@@ -30,11 +30,11 @@ textarea.input {
     padding: 15px;
 }
 
-.content--noturne .input {
+.app--noturne .input {
     background-color: #31315a;
     color: white;
 }
 
-.content--noturne .input::placeholder {
+.app--noturne .input::placeholder {
     color: white;
 }

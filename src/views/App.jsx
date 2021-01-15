@@ -8,8 +8,7 @@ import Menu from '../components/layout/Menu'
 
 const App = () => {
 
-  localStorage.setItem('sidebarMini', localStorage.sidebarMini === undefined? false : localStorage.sidebarMini )
-  localStorage.setItem('noturneTheme', localStorage.noturneTheme === undefined? false : localStorage.noturneTheme )
+
   
   const [sidebarMini, setSidebarMini] = useState( JSON.parse(localStorage.sidebarMini) )
 
@@ -27,7 +26,7 @@ const App = () => {
 
   return(
     <Router>
-      <div className={ `app ${ noturneTheme? 'app--noturne' : '' }` } id="app">
+      <div className={ `app ${ noturneTheme? 'app--noturne' : '' } ${ sidebarMini? 'app--sidebar-mini' : '' }` } id="app">
         <Menu themeController={ changeTheme } noturneTheme={ noturneTheme } sidebarWidthController={ sidebarWidthController } sidebarMini={ sidebarMini } />
         <Content noturneTheme={ noturneTheme } sidebarMini={ sidebarMini } />
       </div>

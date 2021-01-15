@@ -20,7 +20,7 @@
     transition: 1000ms
 }
 
-.photo_container--mini {
+.app--sidebar-mini .photo_container {
     width: 60px;
     height: 60px;
 }

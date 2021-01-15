@@ -20,13 +20,13 @@
     line-height: 36px;
 }
 
-.content--noturne .section__title > h2,
-.content--noturne .section__title > h3
+.app--noturne .section__title > h2,
+.app--noturne .section__title > h3
 {
     color:  #7070FF;
 }
 
-.content--noturne .section__content {
+.app--noturne .section__content {
     color: white;
 }
 
